@@ -1,0 +1,8 @@
+1. Iniciamos o projeto instalando o arquivo (package.json)
+    > npm init --yes
+
+2. Instalamos o Parcel para inserirmos uma contagem regressiva na página
+    > npm install --save-dev parcel
+
+3. Configuramos o sharp.config.json para comprimir Imagens
+    > npm run dev para executar
