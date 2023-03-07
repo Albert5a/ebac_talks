@@ -1,8 +1,27 @@
 1. Iniciamos o projeto instalando o arquivo (package.json)
     > npm init --yes
 
-2. Instalamos o Parcel para inserirmos uma contagem regressiva na página
+2. Instalamos o Parcel para contruir o projeto com poucas configurações
     > npm install --save-dev parcel
 
-3. Configuramos o sharp.config.json para comprimir Imagens
+3. Configuramos o sharp.config.json para comprimir arquivos
     > npm run dev para executar
+
+4.  Ao criarmos o arquivo main.scss, o resetamos o navegador com as seguintes configurações: * { padding: 0; margin: 0; box-sizing: border-box font-family: Roboto, sans-serif; }. Definimos uma max-width de 960px ao container para gerar margem, e uma característica muito importante, evitar a rolagem lateral com elementos que possam extrapolar a largura (tocarei muito neste problema da rolagem lateral, pois além de ver muitos companheiros deste estudo passarem por este problema, já vi sites de empresas serem notificadas pelo Google por apresentarem esse problema, causado por desenvolvedores amadores).
+
+    Nessa jornada de me tornar um desenvolvedor FullStack, iniciei os passos pelo FrontEnd.
+    Estou achando fundamental aprender sobre a organização do HTML e do CSS. Cada vez mais percebo a importância de organizar o header e as sections em classes e seus devidos filhos.
+    Quando falamos de CSS, o arquivo main ditará as regras principais do site, que na minha opinião é o tamanho do container, pois resolve um problema que eu costumava ter com frequência (barra de rolagem lateral). Assim já configuramos: 1. Para Desktop max-width: 960px; width: 100%; margin: 0 auto; 2. Para Tablets: @media (max-width: 1024px) { max-width: 90%; } 3. Para Celulares: @media (max-width: 640px) { max-width: 80%; }.
+
+    Uma configuração muito importante de CSS é o aumento da Opacidade de uma background-image, necessária quando queremos utilizar uma imagem de fundo com muitos detalhes. Para isso precisamos configurar um pseudo-elemento: &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .8;
+    } Lembrando de configurar o position: relative na tag ou classe, e no container trabalhado.
+
+    É muito importante para a organização do desenvolvimento FrontEnd configurar uma section completa antes de iniciar a próxima section, ou seja, ajustamos o FrontEnd no Desktop, Mobile e Tablet. Aí sim estamos prontos para iniciar a próxima section.
