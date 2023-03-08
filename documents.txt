@@ -25,3 +25,14 @@
     } Lembrando de configurar o position: relative na tag ou classe, e no container trabalhado.
 
     É muito importante para a organização do desenvolvimento FrontEnd configurar uma section completa antes de iniciar a próxima section, ou seja, ajustamos o FrontEnd no Desktop, Mobile e Tablet. Aí sim estamos prontos para iniciar a próxima section.
+
+    Ao criarmos um lista com <ul>, as colunas são os <li>.
+    Para colocarmos um botão no canto direito da lista <ul>, colocamos a <ul> dentro de uma <div> com suas respectivas colunas <li>, e fora na <ul>, adicionamos um link <a> e damos ao link uma class de button estilizado no CSS com display: flex e justify-content: space-between. 
+
+    A configuração CSS white-space: nowrap, irá forçar o conteúdo ficar na mesma linha.
+
+    O container é muito importante para limitar a largura do conteúdo.
+
+    Com background-image: linear-gradient(180deg, #1b6ca7, #442bdb); adicionamos um gradiente de cores.
+
+    
