@@ -35,4 +35,4 @@
 
     Com background-image: linear-gradient(180deg, #1b6ca7, #442bdb); adicionamos um gradiente de cores.
 
-    
+    Utilizamos a biblioteca AOS para a animação de deslizar o Container com o atributo data-aos: "fade-..."
