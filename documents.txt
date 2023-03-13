@@ -36,3 +36,5 @@
     Com background-image: linear-gradient(180deg, #1b6ca7, #442bdb); adicionamos um gradiente de cores.
 
     Utilizamos a biblioteca AOS para a animação de deslizar o Container com o atributo data-aos: "fade-..."
+
+    Para configurarmos e executarmos o build src/index.html, temos que excluir o main index.js (arquivo esperado para a construção do projeto no git), pois temos um projeto simples com pouco javascript, e a inteligência do parcel reconhece os demais arquivos atrelados ao nosso index.html para fazer a contrução na pasta dist.
